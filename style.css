@@ -1,0 +1,147 @@
+.title{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  padding: 30px;
+}
+
+.main {
+    display:flex;
+    justify-content:space-evenly;
+    padding-top: 100px;
+}
+
+.select{
+    text-align: center;
+    font-family:"Press Start 2P", cursive;
+}
+
+.me{
+    width:400px;
+    height:400px;
+}
+.opponent{
+    width:400px;
+    height:400px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+     
+}
+
+/* Funky button */
+
+.funk{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.funky-button {
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #3333ff;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  animation: pulse 1.5s infinite;
+  font-family: 'Luckiest Guy', cursive; 
+  letter-spacing: 2px;
+  margin-left: -45px; 
+}
+
+.funky-button:hover {
+  transform: scale(1.1) rotate(2deg);
+  background: linear-gradient(135deg, #3333ff, #ff00cc);
+  box-shadow: 0 0 20px #ff00cc, 0 0 30px #3333ff;
+}
+
+/* Add a pulsing glow animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #ff00cc, 0 0 20px #3333ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff00cc, 0 0 30px #3333ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00cc, 0 0 20px #3333ff;
+  }
+}
+
+
+.rock{
+padding: 18px 36px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      background-size: 300% 300%;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 255, 200, 0.4);
+      animation: rainbow 4s ease infinite;
+      transition: transform 0.2s ease;
+      font-family: 'Chakra Petch', sans-serif;
+}
+.paper{
+padding: 18px 36px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      background-size: 300% 300%;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 255, 200, 0.4);
+      animation: rainbow 4s ease infinite;
+      transition: transform 0.2s ease;
+      font-family: 'Chakra Petch', sans-serif;
+}
+.scissors{
+padding: 18px 36px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      background-size: 300% 300%;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 255, 200, 0.4);
+      animation: rainbow 4s ease infinite;
+      transition: transform 0.2s ease;
+      font-family: 'Chakra Petch', sans-serif;
+}
+
+.rock:active {
+      animation: bounce 0.3s ease;
+    }
+.paper:active {
+      animation: bounce 0.3s ease;
+    }
+.scissors:active {
+      animation: bounce 0.3s ease;
+    }
+
+@keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+@keyframes bounce {
+      0% { transform: scale(1); }
+      30% { transform: scale(0.9); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
