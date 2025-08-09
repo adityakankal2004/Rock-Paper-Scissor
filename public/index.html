@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div>
+        <h1 class="title">Rock Paper Scissors</h1> 
+        <h1 id="result"></h1>
+    </div>
+    <div class="main">
+        <div>
+            <img src="assets/you.png"class="me">
+            <h1 style="text-align: center;">You</h1>
+        </div>
+        <div>
+            <img src="assets/opp2.png"class="opponent">
+             <h1 style="text-align: center;">Opponent</h1>
+        </div>
+    </div>
+    
+        <h2 class="select">Select your move</h2>
+   
+        <div class="buttons">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+        </div>
+        <div class="funk">
+            <button class="funky-button">Play</button>
+        </div>
+        <audio id="win" src="assets/win.wav"></audio>
+        <audio id="lose" src="assets/lose.wav"></audio>
+        <audio id="tie" src="assets/tie.mp3"></audio>
+        <audio id="game-sound" src="assets/game.mp3"></audio>
+        
+        
+    <script src="index.js"></script>
+</body>
+</html>
