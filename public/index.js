@@ -93,7 +93,7 @@ for(let i=0;i<start.length;i++){
 
         setTimeout(()=>{
             clearInterval(cycle);
-
+            //random number func--
             let randNum = Math.floor(Math.random() * 3) + 1;
             opponent.src = moves[randNum - 1];
 
